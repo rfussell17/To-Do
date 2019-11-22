@@ -1,0 +1,24 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: #1a1919;
+}
+
+#container {
+  border: 1px solid;
+  margin: 0 auto;
+  width: 450px;
+  padding-bottom: 40px;
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
+}
+
+h1 {
+  text-align: center;
+}
+
+#input {
+  text-align: center;
+}
