@@ -1,9 +1,9 @@
 
 function todoList(){
   //let todos = [];
-  const deleteButton;
-  const listItem;
-  const inputBox;
+  const deleteButton = document.getElementById("span");
+  const listItem = document.getElementById("list");
+  //const inputBox;
 
 
   inputBox.addEventListener('click', () => {
@@ -11,7 +11,7 @@ function todoList(){
   }); 
 
   listItem.addEventListener('click', () => {
-    
+    console.log("clicked");
   }); 
 
   deleteButton.addEventListener('click', () => {

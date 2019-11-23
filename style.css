@@ -43,7 +43,7 @@ ul {
   font-style: italic;
   font-size: large;
   font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
-  color: rgb(212, 214, 209);
+  color: hsl(0, 2%, 10%);
   margin-left: 15px;
   align-items: center;
   width: 150px;
@@ -53,9 +53,5 @@ ul {
 input::placeholder{
   color: rgb(212, 214, 209);
   font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
-}
-
-ul li:nth-child(odd) {
-  background: #ffc;
 }
 
