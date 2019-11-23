@@ -1,13 +1,18 @@
+
+
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url("images/whiteDesk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
   color: hsl(0, 2%, 10%);
-  padding-top: 100px;
+  padding-top: 160px;
   justify-content: center;
-  font-size: x-large;
 }
 
 #container {
-  border: 1px solid; 
   display: flex;
   flex-direction: column;
   height: 100%; 
@@ -15,6 +20,9 @@ body {
   width: 450px;
   justify-content: center;
   padding-right: 40px;
+  background-color: #ffc;
+  padding-bottom: 50px;
+  box-shadow: 2px 2px 7px rgb(88, 74, 55);
 }
 
 .completed {
@@ -24,19 +32,28 @@ body {
 
 h1 {
   text-align: center;
+  font-size: xx-large;
+}
+
+ul {
+  font-size: large;
 }
 
 #input {
-  padding: 5px ;
   font-style: italic;
   font-size: large;
-  color: rgb(193, 196, 199);
+  color: rgb(212, 214, 209);
   margin-left: 15px;
   align-items: center;
   width: 150px;
-  box-shadow: 4px 4px 7px slategrey;
-  margin-bottom: 20px;
+  background: #ffc
+}
+
+input::placeholder{
+  color: rgb(212, 214, 209);
 }
 
 ul li:nth-child(odd) {
-  background: rgb(238, 240, 241);
+  background: #ffc;
+}
+
