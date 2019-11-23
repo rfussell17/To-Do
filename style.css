@@ -3,6 +3,7 @@ body {
   color: hsl(0, 2%, 10%);
   padding-top: 100px;
   justify-content: center;
+  font-size: x-large;
 }
 
 #container {
@@ -13,6 +14,7 @@ body {
   margin: 0 auto;
   width: 450px;
   justify-content: center;
+  padding-right: 40px;
 }
 
 .completed {
@@ -25,6 +27,16 @@ h1 {
 }
 
 #input {
+  padding: 5px ;
+  font-style: italic;
+  font-size: large;
+  color: rgb(193, 196, 199);
+  margin-left: 15px;
   align-items: center;
-  width: 150px; ;
+  width: 150px;
+  box-shadow: 4px 4px 7px slategrey;
+  margin-bottom: 20px;
 }
+
+ul li:nth-child(odd) {
+  background: rgb(238, 240, 241);
