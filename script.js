@@ -8,12 +8,6 @@
   list.appendChild(li)
   }
   
-  function handleEnter(e){
-    var keycode = (e.keyCode ? e.keyCode : e.which);
-    if (keycode == '13') {
-      alert('You pressed enter! - plain javascript');
-    }
-}
 
   if (e.keyCode == 13) {
       const toDo = input.value;
