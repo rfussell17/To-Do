@@ -1,4 +1,4 @@
-
+/*
   const input = document.getElementById("input");
   let li = document.createElement("li")
   let txtNode = document.createTextNode(input);
@@ -16,5 +16,17 @@
       }
       input.value = "";
      }
-     
-      
+     */
+
+
+function crossOffToDo(){
+
+  let checkToDo = document.getElementById('li');
+  checkToDo.style.color = "gray";
+  checkToDo.style.textDecorationLinethrough;
+  
+    console.log("li clicked");
+}
+    checkToDo = document.getElementById('li').addEventListener('click', () => {
+      crossOffToDo();
+    });
