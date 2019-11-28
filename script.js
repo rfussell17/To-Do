@@ -29,11 +29,7 @@ function addToDo(e){
   input.value ='';
   }
 
-   //check.addEventListener('click', () => {
-    // console.log("check was clicked")
-  //  document.getElementById("li").style.color = "grey";
-  //  document.getElementById("li").style.textDecoration = "line-through";
-  // });
+//Check item as done --- COMPLETED
 
   document.querySelector('li')[
     document.addEventListener ? 'addEventListener' : 'attachEvent'
@@ -46,16 +42,6 @@ function addToDo(e){
           this.style.textDecoration = 'line-through'
         }
 });
-
-
-
-//function crossOffToDo(){
- //document.getElementById('li').addEventListener('click', () => {
- // document.getElementById("li").style.color = "grey";
- // document.getElementById("li").style.textDecoration = "line-through";
- // console.log("li clicked");
- // });
-//}
 
 
 
