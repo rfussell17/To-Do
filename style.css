@@ -17,7 +17,6 @@ body {
   flex-direction: column;
   margin: 0 auto;
   width: 415px;
-  justify-content: center;
   padding-right: 40px;
   background-color: #ffc;
   padding-bottom: 100px;
@@ -41,6 +40,21 @@ ul {
 
 #trash {
   float: right;
+  color: black;
+}
+
+#addBtn {
+  background-color: #ffc;
+  border: 2px solid gray;
+  color: gray;
+  padding: 3px 20px;
+  margin-right: 140px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float: right;
 }
 
 #input {
@@ -48,7 +62,9 @@ ul {
   font-size: large;
   font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
   color: black;
-  margin-left: 15px;
+  margin-left: 35px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   align-items: center;
   width: 150px;
   background: #ffc

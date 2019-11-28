@@ -1,21 +1,13 @@
 
-let toDoList = [];
-const input = document.querySelector("input");
-const list = document.querySelector("ul");
-const listItem = document.querySelectorAll("li") ;
-let deleteToDo = document.querySelectorAll("trash");
+//starting variables
+
+const input = document.getElementById("input");
+const addBtn = document.getElementById("addBtn")
+const list = document.getElementById("ul");
+const listItem = document.getElementById("li") ;
+let deleteToDo = document.getElementById("trash");
 let check = document.getElementById("check");
 
-//input.addEventListener('keydown', runEvent);
-
-//const newListItem = document.createElement('li');
-//li.id = 'listItem';
-//li.setAttribute();
-
-//document.querySelector('ul').appendChild(li);
-
-
-//toDo.push(newTask);
 
 function addToDo(e){
   if(input.value === ''){
@@ -23,9 +15,15 @@ function addToDo(e){
   }
 
   const li = document.createElement('li');
+  li.className = 'li';
   li.appendChild(document.createTextNode(input.value));
-  input.appendChild(li);
+  const link = document.createElement('a');
+  link.className = 'delete-item secondary-content';
+  link.innerHTML = '<i class="fa fa-remove"></i>';
+  li.appendChild(link);
 
+  input.appendChild(li);
+  e.preventDefault();
   input.value ='';
   }
 
@@ -33,10 +31,10 @@ function addToDo(e){
 
   document.querySelector('li')[
     document.addEventListener ? 'addEventListener' : 'attachEvent'
-]('click', function() {
+    ]('click', function() {
     this.style.color = this.style.color === 'black' ?
-        'grey' : 'black';
-        if(this.style.color === 'black'){
+         'grey' : 'black';
+       if(this.style.color === 'black'){
           this.style.textDecoration = 'none'
         } else {
           this.style.textDecoration = 'line-through'
