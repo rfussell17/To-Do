@@ -1,12 +1,10 @@
 
-let toDoList = ['bing', 'bong', 'chug', 'chugga'];
-let input = document.getElementById("input");
-let list = document.getElementById("ul");
-let li = document.getElementById("li") ;
-let deleteToDo = document.querySelector("X");
+let toDoList = [];
+let input = document.querySelector("input");
+let list = document.querySelector("ul");
+let listItem = document.querySelectorAll("li") ;
+let deleteToDo = document.querySelectorAll("X");
 
-for(let i = 0; i < toDoList.length; i++);
-//toDoList.forEach(toDo);
 //toDo.push(newTask);
 
 function toDo(){
@@ -15,18 +13,13 @@ function toDo(){
   }
 
 
-
 function crossOffToDo(){
+ document.getElementById('li').addEventListener('click', () => {
   document.getElementById("li").style.color = "grey";
   document.getElementById("li").style.textDecoration = "line-through";
-  
-    console.log("li clicked");
+  console.log("li clicked");
+  });
 }
-    checkToDo = document.getElementById('li').addEventListener('click', () => {
-      crossOffToDo();
-    });
-
-
     /*
   const input = document.getElementById("input");
   let li = document.createElement("li")
