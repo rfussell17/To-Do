@@ -7,7 +7,7 @@ body {
   background-position: center center;
   background-attachment: fixed;
   font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
-  color: hsl(0, 2%, 10%);
+  color: black);
   padding-top: 160px;
   justify-content: center;
 }
@@ -36,13 +36,18 @@ h1 {
 
 ul {
   font-size: large;
+  list-style-type: none;
+}
+
+#trash {
+  float: right;
 }
 
 #input {
   font-style: italic;
   font-size: large;
   font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
-  color: hsl(0, 2%, 10%);
+  color: black
   margin-left: 15px;
   align-items: center;
   width: 150px;
