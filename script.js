@@ -1,44 +1,49 @@
 
-//starting variables
-
-const input = document.getElementById("input");
-const addBtn = document.getElementById("addBtn")
-const list = document.getElementById("ul");
-const listItem = document.getElementById("li") ;
-let deleteToDo = document.getElementById("trash");
-let check = document.getElementById("check");
 
 
 function addToDo(e){
+
+  const form = document.getElementById("form")
+  const list = document.querySelector(".list");
+  const listItem = document.getElementById("li") ;
+  let deleteToDo = document.getElementById("trash");
+  const li = document.createElement('li');
+  const input = document.getElementById("input");  
+
+    e.preventDefault();
   if(input.value === ''){
     alert("You need to input something!");
   }
 
-  const li = document.createElement('li');
+let textNode = document.createTextNode(input.value);
+li.appendChild(textNode);
+
+  
   li.className = 'li';
   li.appendChild(document.createTextNode(input.value));
   const link = document.createElement('a');
-  link.className = 'delete-item secondary-content';
-  link.innerHTML = '<i class="fa fa-remove"></i>';
+  link.innerHTML = '<i class="far fa-trash-alt"></i>';
   li.appendChild(link);
 
   input.appendChild(li);
-  e.preventDefault();
   input.value ='';
   }
+
+
+
+
+
+
+
+
 
 //Check item as done --- COMPLETED
 
   document.querySelector('li')[
     document.addEventListener ? 'addEventListener' : 'attachEvent'
     ]('click', function() {
-    this.style.color = this.style.color === 'black' ?
-         'grey' : 'black';
-       if(this.style.color === 'black'){
-          this.style.textDecoration = 'none'
-        } else {
-          this.style.textDecoration = 'line-through'
-        }
+      this.style.textDecoration = this.style.textDecoration === 'none' ?
+          'line-through' : 'none';
 });
 
 

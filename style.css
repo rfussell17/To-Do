@@ -23,10 +23,11 @@ body {
   box-shadow: 2px 2px 7px rgb(88, 74, 55);
 }
 
-.completed {
+/*.completed {
   color: gray;
   text-decoration: line-through;
 }
+*/
 
 h1 {
   text-align: center;
@@ -37,6 +38,7 @@ ul {
   font-size: large;
   list-style-type: none;
 }
+
 
 #trash {
   float: right;
@@ -61,6 +63,8 @@ input::placeholder{
   color: rgb(212, 214, 209);
   font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
 }
+
+/*
 #add-item{
 background-color: rgb(103, 105, 103);
 color: white;
@@ -70,3 +74,4 @@ font-size: 15px;
 float: left;
 width: 50px;;
 }
+*/
