@@ -22,7 +22,7 @@ function crossOffToDo(){
   
     console.log("li clicked");
 }
-    checkToDo = document.getElementById('li'.toggleMe).addEventListener('click', () => {
+    checkToDo = document.getElementById('li').addEventListener('click', () => {
       crossOffToDo();
     });
 
@@ -32,17 +32,5 @@ function crossOffToDo(){
   let li = document.createElement("li")
   let txtNode = document.createTextNode(input);
 
-  function toDo(){
-  li.appendChild(txtNode);
-  list.appendChild(li)
-  }
-  
 
-  if (e.keyCode == 13) {
-      const toDo = input.value;
-      if(toDo){
-        addTodo(toDo);
-      }
-      input.value = "";
-     }
      */
