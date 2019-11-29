@@ -1,11 +1,9 @@
 
 
-let input = document.getElementById("input").value;
+function toDoList(){
+  let input = document.getElementById("input").value;
 let task = document.createTextNode(input);
 let newTask = document.createElement("li");
-
-
-function toDoList(){
   newTask.appendChild(task);
   document.getElementById("toDoList").appendChild(newTask);
   input.value = '';
