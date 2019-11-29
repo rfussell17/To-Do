@@ -10,12 +10,7 @@ function toDoList(){
   document.getElementById("toDoList").appendChild(newTask);
   input.value = '';
   console.log("add button pressed");
-  if(newTask.children.length >= 10){
-    alert("Oops! You need to complete a task first!");
-  }
 };
-
-
 
 
 let clear = document.getElementById("clear");
