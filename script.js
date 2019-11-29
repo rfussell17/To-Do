@@ -5,13 +5,36 @@ function toDoList(){
   let newTask = document.createElement("li");
   newTask.appendChild(task);
   document.getElementById("toDoList").appendChild(newTask);
-  
-  input.value = '';
 
-  if(newTask === 10){
+  input.value = '';
+/*
+  if(li.length >= 10){
     alert("Oops! You need to complete a task first!");
   }
+*/
+
 };
+
+
+function clearList(){
+
+}
+
+  document.querySelector('li')[
+    document.addEventListener ? 'addEventListener' : 'attachEvent'
+    ]('click', function() {
+      this.style.textDecoration = this.style.textDecoration === 'none' ?
+          'line-through' : 'none';
+});
+
+
+
+
+/*-------------------------------------------------------------------------
+
+
+
+
 
 let trashButton = document.getElementById("trash");
 trashButton.addEventListener('click', () => {
@@ -21,24 +44,6 @@ trashButton.addEventListener('click', () => {
 let checkButton = document.getElementById("check");
 checkButton.addEventListener('click', () => {
   console.log("check clicked");
-  let li = document.getElementsByClassName('.li');
-  li.style.textDecoration = li.style.textDecoration === 'none' ?
-          'line-through' : 'none';
+  striked();
 });
-
-
-
-
-/*
-
-function striked(){
-  document.querySelector('li')[
-    document.addEventListener ? 'addEventListener' : 'attachEvent'
-    ]('click', function() {
-      this.style.textDecoration = this.style.textDecoration === 'none' ?
-          'line-through' : 'none';
-});
-};
-
 */
-
