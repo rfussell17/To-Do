@@ -5,7 +5,12 @@ function toDoList(){
   let newTask = document.createElement("li");
   newTask.appendChild(task);
   document.getElementById("toDoList").appendChild(newTask);
+  
   input.value = '';
+
+  if(newTask === 10){
+    alert("Oops! You need to complete a task first!");
+  }
 };
 
 let trashButton = document.getElementById("trash");
