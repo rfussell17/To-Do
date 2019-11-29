@@ -19,8 +19,8 @@ body {
   width: 415px;
   padding-right: 40px;
   background-color: #ffc;
-  padding-bottom: 100px;
   box-shadow: 2px 2px 7px rgb(88, 74, 55);
+  height: 400px;
 }
 
 /*.completed {
