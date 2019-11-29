@@ -1,26 +1,30 @@
 
 
+let input = document.getElementById("input").value;
+let task = document.createTextNode(input);
+let newTask = document.createElement("li");
+
 
 function toDoList(){
-  let input = document.getElementById("input").value;
-  let task = document.createTextNode(input);
-  let newTask = document.createElement("li");
   newTask.appendChild(task);
   document.getElementById("toDoList").appendChild(newTask);
-
   input.value = '';
-/*
-  if(li.length >= 10){
+  console.log("add button pressed");
+  if(newTask.children.length >= 10){
     alert("Oops! You need to complete a task first!");
   }
-*/
-
 };
 
 
-function clearList(){
 
+
+let clear = document.getElementById("clear");
+clear.addEventListener('click', () => {
+  console.log("clear item button")
+for (i = 0; i < newTask.children.length; i++) {
+  newTask.children[i].style = "display: none";
 }
+}); 
 
   document.querySelector('li')[
     document.addEventListener ? 'addEventListener' : 'attachEvent'
@@ -35,6 +39,10 @@ function clearList(){
 /*-------------------------------------------------------------------------
 
 
+/*
+  if(li.length >= 10){
+    alert("Oops! You need to complete a task first!");
+  }
 
 
 
