@@ -16,9 +16,6 @@ function toDoList(){
 let clear = document.getElementById("clear");
 clear.addEventListener('click', () => {
   console.log("clear item button")
-for (i = 0; i < newTask.children.length; i++) {
-  newTask.children[i].style = "display: none";
-}
 }); 
 
   document.querySelector('li')[
