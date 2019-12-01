@@ -23,11 +23,6 @@ body {
   height: 400px;
 }
 
-/*.completed {
-  color: gray;
-  text-decoration: line-through;
-}
-*/
 
 button {
   cursor: pointer;

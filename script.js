@@ -1,5 +1,4 @@
 
-
 function toDoList(){
   let input = document.getElementById("input").value;
 let task = document.createTextNode(input);
@@ -22,11 +21,6 @@ clear.addEventListener('click', () => {
       this.style.textDecoration = this.style.textDecoration === 'none' ?
           'line-through' : 'none';
 });
-
-
-
-
-/*-------------------------------------------------------------------------
 
 
 /*
