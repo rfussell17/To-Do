@@ -11,18 +11,13 @@ function addTask(){
     newTask.style.textDecoration = newTask.style.textDecoration === 'none' ?
       'line-through' : 'none';
     }); 
-    
-    if(ul.li >= 10){
-      alert("Oops! You need to complete a task first!");
-    }
 
-  };
-
-  
-let clearBtn = document.getElementById("clear");
+    let clearBtn = document.getElementById("clear");
 clearBtn.addEventListener('click', () => {
   console.log("clear item button")
-  ul.innerHTML = '';
-}); 
+  if(newTask.style.textDecoration === 'line-through')
+  newTask.innerHTML = '';
+});
+};
 
 

@@ -16,7 +16,7 @@
 <img src="images/finalToDo.png" height= 500  title="HTML5 Powered">
 
 ## Try it out here:    
-### [To-Do List App](https://rfussell17.github.io/pomodoro/)
+### [To-Do List App](https://rfussell17.github.io/To-Do/)
 
 ## Author
 ### Robin Fussell
