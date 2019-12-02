@@ -8,7 +8,7 @@
 
 
 #  Summary
-### This is my To-Do List App project that is built with HTML, CSS and vanilla JS. No Libraries or Frameworks were used. You can add items to complete, cross them off when finished and clear the list when you complete them all.
+### This is my To-Do List App project that is built with HTML, CSS and vanilla JS. No Libraries or Frameworks were used. You can add items to complete, cross them off when finished and clear items that have been completed.
 
 
 
