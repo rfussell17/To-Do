@@ -1,43 +1,38 @@
 
-function toDoList(){
+function addTask(){
   let input = document.getElementById("input").value;
-let task = document.createTextNode(input);
-let newTask = document.createElement("li");
-  newTask.appendChild(task);
-  document.getElementById("toDoList").appendChild(newTask);
-  input.value = '';
-  console.log("add button pressed");
+  let task = document.createTextNode(input);
+  let newTask = document.createElement("li");
+    newTask.appendChild(task);
+    document.getElementById("ul").appendChild(newTask);
+    form.reset();
+    console.log("add button pressed");  
+
+  newTask.addEventListener('click', () => {
+    console.log("li clicked")
+    newTask.style.textDecoration = newTask.style.textDecoration === 'none' ?
+      'line-through' : 'none';
+    }); 
+  };
+
+
+    /******
+
+    if(ul.length >= 10){
+      alert("Oops! You need to complete a task first!");
+    }
 };
+  
+
+/**********/
 
 
-let clear = document.getElementById("clear");
-clear.addEventListener('click', () => {
+
+
+let clearBtn = document.getElementById("clear");
+clearBtn.addEventListener('click', () => {
   console.log("clear item button")
+  ul.innerHTML = '';
 }); 
 
-  document.querySelector('li')[
-    document.addEventListener ? 'addEventListener' : 'attachEvent'
-    ]('click', function() {
-      this.style.textDecoration = this.style.textDecoration === 'none' ?
-          'line-through' : 'none';
-});
 
-
-/*
-  if(li.length >= 10){
-    alert("Oops! You need to complete a task first!");
-  }
-
-
-
-let trashButton = document.getElementById("trash");
-trashButton.addEventListener('click', () => {
-  console.log("trash clicked")
-});
-
-let checkButton = document.getElementById("check");
-checkButton.addEventListener('click', () => {
-  console.log("check clicked");
-  striked();
-});
-*/
