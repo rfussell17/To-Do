@@ -23,7 +23,6 @@ body {
   height: 400px;
 }
 
-
 button {
   cursor: pointer;
     box-shadow: 0px 0px 0px 0px #3a3a3a;
@@ -39,6 +38,21 @@ button {
     text-decoration:none;
     text-shadow:0px 0px 0px #767775;
 }
+
+#form {
+  font-style: italic;
+  font-size: large;
+  font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
+  color: black;
+  margin-left: 35px;;
+  background: #ffc
+}
+
+input::placeholder{
+  color: rgb(212, 214, 209);
+  font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
+}
+
 button:hover {
   background-color:#9b9e9b;
 }
@@ -60,23 +74,4 @@ ul {
 
 li {
   cursor: pointer;
-}
-
-#trash {
-  float: right;
-  color: black;
-}
-
-#form {
-  font-style: italic;
-  font-size: large;
-  font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
-  color: black;
-  margin-left: 35px;;
-  background: #ffc
-}
-
-input::placeholder{
-  color: rgb(212, 214, 209);
-  font-family: 'comic sans MS', Arial, Helvetica, sans-serif;
 }

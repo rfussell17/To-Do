@@ -6,29 +6,19 @@ function addTask(){
     newTask.appendChild(task);
     document.getElementById("ul").appendChild(newTask);
     form.reset();
-    console.log("add button pressed");  
 
   newTask.addEventListener('click', () => {
-    console.log("li clicked")
     newTask.style.textDecoration = newTask.style.textDecoration === 'none' ?
       'line-through' : 'none';
     }); 
-  };
-
-
-    /******
-
-    if(ul.length >= 10){
+    
+    if(ul.li >= 10){
       alert("Oops! You need to complete a task first!");
     }
-};
+
+  };
+
   
-
-/**********/
-
-
-
-
 let clearBtn = document.getElementById("clear");
 clearBtn.addEventListener('click', () => {
   console.log("clear item button")
