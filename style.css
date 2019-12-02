@@ -20,7 +20,9 @@ body {
   padding-right: 40px;
   background-color: #ffc;
   box-shadow: 2px 2px 7px rgb(88, 74, 55);
-  height: 400px;
+  min-height: 400px;
+  max-height: 400px;
+  overflow-y: auto;
 }
 
 button {
