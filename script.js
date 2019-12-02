@@ -12,12 +12,11 @@ function addTask(){
       'line-through' : 'none';
     }); 
 
-    let clearBtn = document.getElementById("clear");
-clearBtn.addEventListener('click', () => {
-  console.log("clear item button")
-  if(newTask.style.textDecoration === 'line-through')
-  newTask.innerHTML = '';
-});
+  let clearBtn = document.getElementById("clear");
+  clearBtn.addEventListener('click', () => {
+    if(newTask.style.textDecoration === 'line-through')
+    newTask.innerHTML = '';
+ });
 };
 
 
