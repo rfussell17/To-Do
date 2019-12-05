@@ -6,7 +6,6 @@
 
 <br>
  <img src="images/frontend2.png"   title="HTML5 Powered">
-<br>
  
 
 
