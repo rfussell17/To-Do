@@ -22,14 +22,13 @@ function addTask() {
   });
 }
 
-  //clear all completed to-dos
+//clear all completed to-dos
 
 const clearBtn = document.getElementById("clear");
 clearBtn.addEventListener("click", () => {
-
   const liElements = document.querySelectorAll("li");
   liElements.forEach(li => {
-    if(li.style.textDecoration === "line-through"){
+    if (li.style.textDecoration === "line-through") {
       li.innerHTML = "";
     }
   });
